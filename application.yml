@@ -1,0 +1,19 @@
+keycloak:
+  enabled: false
+#  enable-basic-auth: false                        # basic auth is default true, we dont want that
+  realm: demo                                      # our keycloak realm this resource service should be based in
+  auth-server-url: http://svtestvra0215/auth       # the url to our sso server (keycloak)
+#  ssl-required: external                          # no ssl is ok for demo  - do not use this in production
+  resource: my-client                              # the realm-client which accessing clients should be authenticate with
+#  use-resource-role-mappings: true                # use this if you manage your roles in client scope not in realm scope
+#  public-client: false                            # we do not write a web-app - so no login page and redirects are necessary
+#  bearer-only: true                               # authentication via access_token is fine
+#  credentials:
+#    secret: 0b15b593-5aab-486a-a92d-b110b49959a6  # the credentials of the keycloak client
+#  securityConstraints:
+#  -   authRoles:
+#      - demo-user-role                            # the authenticated user needs this role to be authorized to access this ressource
+#      securityCollections:
+#      -   name: acces only with auth              # just a comment
+#          patterns:
+#          - /user                                 # the actual rest endpoint which shoulb be protected
