@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,7 +21,7 @@ public class UserApiController {
 	public List<String> getUsers() {
 		log.info("Context is {}", SecurityContextHolder.getContext());
 		log.info("Authentication is {}", SecurityContextHolder.getContext().getAuthentication());
-		log.info("Principale is {}", SecurityContextHolder.getContext().getAuthentication().getPrincipal());
+		log.info("Principal is {}", SecurityContextHolder.getContext().getAuthentication().getPrincipal());
 		log.info("Details is {}", SecurityContextHolder.getContext().getAuthentication().getDetails());
 		log.info("Returning USERS list.");
 		return Arrays.asList("lhauspie", "ddumortier", "calexandre", "jpotteau");

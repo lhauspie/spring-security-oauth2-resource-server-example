@@ -24,7 +24,7 @@ public class CustomerApiController {
     log.info("Context is {}", SecurityContextHolder.getContext());
     log.info("Authentication is {}", SecurityContextHolder.getContext().getAuthentication());
     log.info("UserAuthentication is {}", ((OAuth2Authentication) SecurityContextHolder.getContext().getAuthentication()).getUserAuthentication());
-    log.info("Principale is {}", SecurityContextHolder.getContext().getAuthentication().getPrincipal());
+    log.info("Principal is {}", SecurityContextHolder.getContext().getAuthentication().getPrincipal());
     log.info("Details is {}", SecurityContextHolder.getContext().getAuthentication().getDetails());
     log.info("DecodedDetails is {}", ((OAuth2AuthenticationDetails) SecurityContextHolder.getContext().getAuthentication().getDetails()).getDecodedDetails());
     log.info("Returning CUSTOMERS list.");
