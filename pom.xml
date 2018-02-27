@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-security-oauth2-resource-server-exemple</name>
+	<name>spring-security-oauth2-resource-server-example</name>
 	<description>Example project for securing resource server (RestController) with spring-security-oauth2 </description>
 
 	<parent>
