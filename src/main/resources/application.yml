@@ -7,3 +7,8 @@ security:
       user-info-uri: http://localhost:32768/auth/realms/demo/protocol/openid-connect/userinfo
       token-info-uri: http://localhost:32768/auth/realms/demo/protocol/openid-connect/token/introspect
       prefer-token-info: true
+
+logging:
+  level:
+    root: WARN
+    org.springframework.security: TRACE
